@@ -13,7 +13,7 @@
 				"ms-python.python"
 			],
 			"settings": {
-				"python.poetryPath": "~/.cache/pypoetry/virtualenvs/auth-xS3fZVNL-py3.9/bin/python"
+				"python.defaultInterpreterPath": "~/.cache/pypoetry/virtualenvs"
 			}
 		}
 	},
