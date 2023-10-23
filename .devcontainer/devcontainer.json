@@ -1,5 +1,5 @@
 {
-	"name": "monorepo",
+	"name": "monorepo-config",
 	"build": {
 		"context": "..",
 		"dockerfile": "Dockerfile"

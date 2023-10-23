@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from .internal import admin
-from .routers import oauth
+from .routers.v1 import oauth
 
 server = FastAPI()
 
