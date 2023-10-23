@@ -1,0 +1,21 @@
+{
+	"name": "auth",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+	"workspaceFolder": "/workspace",
+	"build": {
+		"context": "..",
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"ms-python.python"
+			],
+			"settings": {
+				"python.defaultInterpreterPath": "~/.cache/pypoetry/virtualenvs"
+			}
+		}
+	},
+	"postCreateCommand": "poetry install"
+}
