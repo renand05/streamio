@@ -4,7 +4,7 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from fastapi import Depends, HTTPException, status
 from passlib.context import CryptContext
 from typing import Annotated, Union
-from ..domains.user import UserInDB
+from app.domains.user import UserInDB
 
 SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"
 ALGORITHM = "HS256"
@@ -33,7 +33,7 @@ def create_oauth_token(input_data: Annotated[OAuth2PasswordRequestForm, Depends(
         )
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(
-        data={"sub": "test"}, expires_delta=access_token_expires
+        data={"sub": input_data.username}, expires_delta=access_token_expires
     )
     return {"access_token": access_token, "token_type": "bearer"}
 

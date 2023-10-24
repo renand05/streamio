@@ -4,8 +4,8 @@ from fastapi.security import OAuth2PasswordRequestForm
 from fastapi import Depends
 from typing import Annotated
 
-from ...domains.token import Token
-from ...services.access_token import create_oauth_token
+from app.domains.token import Token
+from app.services.access_token import create_oauth_token
 
 router = APIRouter(
     prefix="/oauth",

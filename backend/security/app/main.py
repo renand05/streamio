@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from .internal import admin
-from .routers.v1 import oauth
+from app.internal import admin
+from app.routers.v1 import oauth
 
 server = FastAPI()
 
@@ -14,4 +14,4 @@ server.include_router(
 
 @server.get("/")
 async def root():
-    return {"message": "Hello Bigger Applications!"}
+    return {"message": "Hello World"}
