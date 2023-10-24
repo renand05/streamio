@@ -1,9 +1,9 @@
 {
-	"name": "auth",
+	"name": "security",
 	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
 	"workspaceFolder": "/workspace",
 	"build": {
-		"context": "..",
+		"context": "../../../",
 		"dockerfile": "Dockerfile"
 	},
 	"customizations": {

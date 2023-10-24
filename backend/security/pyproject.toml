@@ -13,7 +13,7 @@ python-jose = {extras = ["cryptography"], version = "^3.3.0"}
 passlib = {extras = ["bcrypt"], version = "^1.7.4"}
 httpx = "^0.25.0"
 pytest = "^7.4.2"
-
+domains = {path = "../shared/domains/"}
 
 [build-system]
 requires = ["poetry-core"]
