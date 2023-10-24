@@ -12,7 +12,6 @@ server.include_router(
     responses={418: {"description": "I'm a teapot"}},
 )
 
-
 @server.get("/")
 async def root():
     return {"message": "Hello Bigger Applications!"}
