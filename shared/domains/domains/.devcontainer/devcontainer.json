@@ -1,5 +1,7 @@
 {
-	"name": "monorepo",
+	"name": "domains",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+	"workspaceFolder": "/workspace",
 	"build": {
 		"context": "..",
 		"dockerfile": "Dockerfile"
