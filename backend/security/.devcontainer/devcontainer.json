@@ -17,5 +17,8 @@
 			}
 		}
 	},
+	"mounts": [
+		"source=${localWorkspaceFolder}/../../shared,target=/workspace/lib,type=bind,consistency=cached"
+	],
 	"postCreateCommand": "poetry install"
 }
